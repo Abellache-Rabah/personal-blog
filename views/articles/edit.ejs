@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+	<title>New Article</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="m-4">Edit Article</h1>
+		<form action="/articles/<%= articles.id %>?_method=PUT" method="POST">
+			<%- include("_form") %>
+			
+		</form>
+	</div>
+</body>
+</html>
