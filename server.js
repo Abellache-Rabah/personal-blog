@@ -18,9 +18,10 @@ app.use(express.static("public"));
 app.get("/",function(req,res){
 	 Article.find({} , function(err , result){
 		if(!err){
-		res.render('articles/index' , {articles : result});
+		res.render('articles/index' , {articles : result
+		});
 		}else {
-			res.redirect('/');
+	      	res.redirect('/');
 		}
 
 	}).sort({
